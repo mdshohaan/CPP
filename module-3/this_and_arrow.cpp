@@ -20,6 +20,6 @@ public:
 int main() {
 
   Student Rahim(45, 4, 4.55);
-  cout << Rahim.roll << " " << Rahim.cls << " " << Rahim.gpa;
+  // cout << Rahim.roll << " " << Rahim.cls << " " << Rahim.gpa;
   return 0;
 }
