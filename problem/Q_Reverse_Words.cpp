@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <sstream>
 using namespace std;
@@ -6,17 +7,13 @@ int main() {
 
   string s;
   getline(cin, s);
-
   stringstream ss(s);
   string word;
   ss >> word;
-
   reverse(word.begin(), word.end());
-  cout << word; // first word
-
+  cout << word;
   while (ss >> word) {
     reverse(word.begin(), word.end());
-
     cout << " " << word;
   }
 
