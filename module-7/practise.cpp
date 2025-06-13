@@ -1,25 +1,16 @@
 #include <iostream>
-#include <sstream>
-
 using namespace std;
 
 int main() {
 
-  string s1;
-  getline(cin, s1);
-  string s2;
-  cin >> s2;
+  int n = 3;
+  for (int i = 1; i <= n; i++) {
 
-  stringstream ss(s1);
-  string word;
-  int cnt = 0;
-  while (ss >> word) {
-    if (word == s2) {
-      cnt++;
+    for (int j = 1; j <= i; j++) {
+      cout << j << " ";
     }
+    cout << endl;
   }
 
-  cout << cnt;
-
-  return 0;
+  cout << endl;
 }
